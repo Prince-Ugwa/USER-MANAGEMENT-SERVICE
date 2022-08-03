@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.logo {
+  font-size: 42px;
+  padding: 10px 30px;
+}
+.form-control {
+  width: 50%;
+  margin: auto;
+}
+.form-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.form-head h3 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 20px 0 4px 0;
+  color: #1244a5;
+}
+.form-head p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+form .names {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+form .names .fname {
+  flex: 1;
+}
+form .names .lname {
+  flex: 1;
+}
+form input,
+select,
+.button {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 18px 18px;
+  border-radius: 8px;
+  /* height: 50px; */
+  outline: none;
+  border: 1px solid #cbcbcb;
+  display: inline-block;
+}
+.button {
+  margin-top: 10px;
+  background-color: #2d72f7;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0346ca;
+}
+.question {
+  text-align: center;
+  font-size: 18px;
+  margin: 32px 0 92px 0;
+}
+.question span {
+  color: #2d72f7;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.question span:hover {
+  color: #0346ca;
+  font-weight: 700;
+}
+/**************************************************************************/
+/* SUCCESS MESSAGE*/
+
+#message {
+  margin: 80px auto;
+  max-width: 90%;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.msg-text {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #2d72f7;
+}
+/**************************************************************************/
+
+/**************************************************************************/
+
+@media only screen and (max-width: 920px) {
+  form .names {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-control {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .logo {
+    font-size: 34px;
+  }
+  .form-head h3 {
+    font-size: 32px;
+  }
+  .form-head p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+@media only screen and (max-width: 380px) {
+  button {
+    padding: 20px 0;
+  }
+  .form-head h3 {
+    font-size: 24px;
+  }
+  .question {
+    font-size: 14px;
+  }
+  .form-head p {
+    font-size: 10px;
+    margin-bottom: 24px;
+  }
+}
+/**************************************************************************/
+@media only screen and (max-width: 620px) {
+  .msg-text {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .msg-text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .msg-text {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+}
+/**************************************************************************/

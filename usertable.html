@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="Css/table-style.css" />
+    <title>User management service | Developer of value</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <h2>Logo</h2>
+          <h4>User Management</h4>
+        </nav>
+      </header>
+      <div class="table-wrapper">
+        <div class="all-user-table">
+          <div class="all-user">
+            <h3>All user</h3>
+            <button class="add-user">
+              <!-- <div class="plus">+</div> -->
+              <ion-icon name="add-circle-outline" class="plus"></ion-icon>
+              <p>Add new user</p>
+            </button>
+          </div>
+          <div class="select-filter-search">
+            <div class="select-box">
+              <div class="box">
+                <input type="checkbox" name="select" id="select" " />
+                <label for="select">Select</label>
+              </div>
+            </div>
+            <div class="filter-search">
+              <div class="filter">
+                <ion-icon name="list-outline" class="filter-icon"></ion-icon>
+                <p class="filter-text">Filter by country</p>
+              </div>
+              <div class="search">
+                <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                <input
+                  type="search"
+                  name="search"
+                  id="search-box"
+                  placeholder="Search User"
+                />
+              </div>
+              <div class="search-btn">
+                <button>search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>All</th>
+              <th>Sn</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Sex</th>
+              <th>Country</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr">
+              <td><input type="checkbox" name="select" id="select" " /></td>
+              <td>1</td>
+              <td>John</td>
+              <td>Abubakar</td>
+              <td>johnabubakar@gmail.com</td>
+              <td style="opacity: 1">+2348068444404</td>
+              <td style="opacity: 1">Male</td>
+              <td style="opacity: 1">Nigeria</td>
+              <td>
+                <ion-icon
+                  name="ellipsis-horizontal-outline"
+                  class="dot"
+                ></ion-icon>
+              </td>
+              <td class="crud">
+                <div class="view">
+                  <p>View</p>
+                </div>
+                <div class="update">
+                  <ion-icon
+                    name="create-outline"
+                    class="update-icon"
+                  ></ion-icon>
+                  <p>Update</p>
+                </div>
+                <div class="deactivate">
+                  <p>Deactivate</p>
+                </div>
+                <div class="delete">
+                  <p>Delete</p>
+                  <ion-icon name="trash-outline" class="delete-icon"></ion-icon>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
