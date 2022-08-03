@@ -206,9 +206,9 @@ tbody td {
   background-color: #dddddd;
   color: #635f5f;
   cursor: pointer;
-  /* height: 30px;
-  width: 30px; */
-  padding: 10px 15px;
+  height: 20px;
+  width: 22px;
+  padding: 10px;
   border-radius: 5px;
   margin-left: 15px;
 }
@@ -221,7 +221,7 @@ tbody td {
   gap: 15px;
   position: absolute;
   top: 0;
-  right: 12%;
+  right: 2%;
   justify-content: center;
   align-items: center;
   background-color: #fff;
