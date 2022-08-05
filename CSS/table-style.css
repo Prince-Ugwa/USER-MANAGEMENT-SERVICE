@@ -220,6 +220,7 @@ tbody td {
 }
 .crud {
   display: flex;
+  opacity: 0;
   gap: 15px;
   position: absolute;
   top: 0;
