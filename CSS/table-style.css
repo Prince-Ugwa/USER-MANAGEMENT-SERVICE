@@ -180,6 +180,8 @@ nav h4 {
   max-width: 100%;
   width: 90%;
   margin: auto;
+  background-color: #fff;
+  overflow: auto;
 }
 
 table {
