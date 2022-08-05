@@ -28,7 +28,7 @@
           <div class="all-user">
             <h3>All user</h3>
             <button class="add-user">
-              <!-- <div class="plus">+</div> -->
+          
               <ion-icon name="add-circle-outline" class="plus"></ion-icon>
               <p>Add new user</p>
             </button>
@@ -77,6 +77,49 @@
             </tr>
           </thead>
           <tbody>
+           <tr class="tr">
+              <td><input type="checkbox" name="select" id="select" " /></td>
+              <td>1</td>
+              <td>John</td>
+              <td>Abubakar</td>
+              <td>johnabubakar@gmail.com</td>
+              <td style="opacity: 1">+2348068444404</td>
+              <td style="opacity: 1">Male</td>
+              <td style="opacity: 1">Nigeria</td>
+              <td>
+                <ion-icon
+                  name="ellipsis-horizontal-outline"
+                  class="dot crud-open"
+                ></ion-icon>
+              </td>
+              <td class="crud hidden">
+                  <div class="view">
+                    <p>View</p>
+                  </div>
+                  <div class="update">
+                    <ion-icon
+                      name="create-outline"
+                      class="update-icon"
+                    ></ion-icon>
+                    <p>Update</p>
+                  </div>
+                  <div class="deactivate">
+                    <p>Deactivate</p>
+                  </div>
+                  <div class="delete">
+                    <p>Delete</p>
+                    <ion-icon
+                      name="trash-outline"
+                      class="delete-icon"
+                    ></ion-icon>
+                  </div>
+                  <ion-icon
+                    name="ellipsis-vertical-outline"
+                    class="dot crud-close"
+                  ></ion-icon>
+                </td>
+              </div>
+            </tr>
             <tr class="tr">
               <td><input type="checkbox" name="select" id="select" " /></td>
               <td>1</td>
@@ -89,73 +132,37 @@
               <td>
                 <ion-icon
                   name="ellipsis-horizontal-outline"
-                  class="dot"
+                  class="dot crud-open"
                 ></ion-icon>
               </td>
-              <td class="crud">
-                <div class="view">
-                  <p>View</p>
-                </div>
-                <div class="update">
+              <td class="crud hidden">
+                  <div class="view">
+                    <p>View</p>
+                  </div>
+                  <div class="update">
+                    <ion-icon
+                      name="create-outline"
+                      class="update-icon"
+                    ></ion-icon>
+                    <p>Update</p>
+                  </div>
+                  <div class="deactivate">
+                    <p>Deactivate</p>
+                  </div>
+                  <div class="delete">
+                    <p>Delete</p>
+                    <ion-icon
+                      name="trash-outline"
+                      class="delete-icon"
+                    ></ion-icon>
+                  </div>
                   <ion-icon
-                    name="create-outline"
-                    class="update-icon"
+                    name="ellipsis-vertical-outline"
+                    class="dot crud-close"
                   ></ion-icon>
-                  <p>Update</p>
-                </div>
-                <div class="deactivate">
-                  <p>Deactivate</p>
-                </div>
-                <div class="delete">
-                  <p>Delete</p>
-                  <ion-icon name="trash-outline" class="delete-icon"></ion-icon>
-                </div>
-                <ion-icon
-                  name="ellipsis-vertical-outline"
-                  class="dot"
-                ></ion-icon>
-              </td>
+                </td>
+              </div>
             </tr>
-            <tr class="tr">
-              <td><input type="checkbox" name="select" id="select" " /></td>
-              <td>1</td>
-              <td>John</td>
-              <td>Abubakar</td>
-              <td>johnabubakar@gmail.com</td>
-              <td style="opacity: 1">+2348068444404</td>
-              <td style="opacity: 1">Male</td>
-              <td style="opacity: 1">Nigeria</td>
-              <td>
-                <div class="crud-open">
-                  <ion-icon
-                    name="ellipsis-horizontal-outline"
-                    class="dot"
-                  ></ion-icon>
-                </div>
-              </td>
-              <td class="crud" style="opacity: 0">
-                <div class="view">
-                  <p>View</p>
-                </div>
-                <div class="update">
-                  <ion-icon
-                    name="create-outline"
-                    class="update-icon"
-                  ></ion-icon>
-                  <p>Update</p>
-                </div>
-                <div class="deactivate">
-                  <p>Deactivate</p>
-                </div>
-                <div class="delete">
-                  <p>Delete</p>
-                  <ion-icon name="trash-outline" class="delete-icon"></ion-icon>
-                </div>
-                <ion-icon
-                  name="ellipsis-vertical-outline"
-                  class="dot"
-                ></ion-icon>
-              </td>
             </tr>
           </tbody>
         </table>
