@@ -1,11 +1,12 @@
 const crud = document.querySelector(".crud");
 const crudClose = document.querySelector(".crud-close");
-const crudOpen = document.querySelector(".crud-open");
+const crudOpen = document.querySelectorAll(".crud-open");
 
-crudOpen.addEventListener("click", function () {
+function openCrud() {
   crud.classList.remove("hidden");
-});
+  crudOpen.classList.add("hidden");
+}
 
-crudClose.addEventListener("click", function () {
-  crud.classList.add("hidden");
+crudOpen.forEach((open) => {
+  open.addEventListener("click", openCrud);
 });

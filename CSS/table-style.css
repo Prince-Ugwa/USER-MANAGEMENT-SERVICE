@@ -226,7 +226,7 @@ tbody td {
   gap: 15px;
   position: absolute;
   top: 0;
-  right: 2%;
+  right: 55px;
   justify-content: center;
   align-items: center;
   background-color: #fff;
@@ -291,4 +291,35 @@ tbody td {
 .delete-icon {
   height: 20px;
   width: 20px;
+}
+
+.pagination {
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.pagination > div {
+  height: 40px;
+  width: 40px;
+  font-size: 14px;
+  color: #635f5f;
+  border: 1px solid #7e7e7e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.pagination > div:hover {
+  background-color: #2d72f7;
+  color: #fff;
+  border: none;
+}
+.pagination > div:first-child {
+  background-color: #2d72f7;
+  border: none;
+  color: #fff;
 }
