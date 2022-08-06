@@ -1,20 +1,15 @@
-const crud = document.querySelectorAll(".crud");
-const crudClose = document.querySelectorAll(".crud-close");
-const crudOpen = document.querySelector(".crud-open");
+const crud = document.querySelector(".crud");
+// const crudClose = document.querySelector(".crud-close");princewill
+const crudOpen = document.querySelectorAll(".crud-open");
 
-// function openCrud(e) {
-//   e.classList.remove("hidden");
-//   e.classList.add("hidden");
-// }
+function openCrud(e) {
+  e.classList.toggle("hidden");
+}
 
-// crudOpen.forEach((open) => {
-//   open.addEventListener("click", openCrud);
-// });
+crudOpen.forEach((open) => {
+  open.addEventListener("click", function (e) {
+    const target = e.target;
 
-// crudOpen.addEventListener("click", () => {
-//   crud.classList.remove("hidden");
-// });
-
-// crudClose.addEventListener("click", () => {
-//   crud.classList.add("hidden");
-// });
+    openCrud(target.parentElement.nextElementSibling);
+  });
+});

@@ -220,13 +220,15 @@ tbody td {
 }
 .tr .hidden {
   display: none;
+  /* transform: translateX(-50px); */
+  transition: all 0.3s ease-in;
 }
 .crud {
   display: flex;
   gap: 15px;
   position: absolute;
   top: 0;
-  right: 55px;
+  right: 10%;
   justify-content: center;
   align-items: center;
   background-color: #fff;
