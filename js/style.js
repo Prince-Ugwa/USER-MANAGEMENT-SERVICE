@@ -1,5 +1,5 @@
-const crud = document.querySelector(".crud");
-const crudClose = document.querySelector(".crud-close");
+const crud = document.querySelectorAll(".crud");
+const crudClose = document.querySelectorAll(".crud-close");
 const crudOpen = document.querySelector(".crud-open");
 
 // function openCrud(e) {
@@ -11,10 +11,10 @@ const crudOpen = document.querySelector(".crud-open");
 //   open.addEventListener("click", openCrud);
 // });
 
-crudOpen.addEventListener("click", () => {
-  crud.classList.remove("hidden");
-});
+// crudOpen.addEventListener("click", () => {
+//   crud.classList.remove("hidden");
+// });
 
-crudClose.addEventListener("click", () => {
-  crud.classList.add("hidden");
-});
+// crudClose.addEventListener("click", () => {
+//   crud.classList.add("hidden");
+// });
